@@ -5,16 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fitter Privacy Policy</title>
 <style>
+  @font-face {
+    font-family: "Bricolage Grotesque";
+    src: url("BricolageGrotesque_800ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-display: swap;
+  }
   :root {
     color-scheme: light dark;
-    --bg: #ffffff;
-    --fg: #1a1a1a;
-    --muted: #5b5b5b;
-    --accent: #2f6f4f;
+    --bg: #faf9f6;
+    --fg: #1a110e;
+    --muted: #6b625c;
+    --accent: #e65100;
     --max-width: 640px;
   }
   @media (prefers-color-scheme: dark) {
-    :root { --bg: #14161a; --fg: #eaeaea; --muted: #a8a8a8; --accent: #6fbf94; }
+    :root { --bg: #1a110e; --fg: #faf9f6; --muted: #b8ada5; --accent: #e65100; }
   }
   * { box-sizing: border-box; }
   body {
@@ -29,15 +35,23 @@
     margin: 0 auto;
     padding: 48px 20px 80px;
   }
-  h1 { font-size: 1.6rem; margin-bottom: 4px; }
+  h1 {
+    font-family: "Bricolage Grotesque", -apple-system, sans-serif;
+    font-weight: 800;
+    font-size: 1.9rem;
+    margin-bottom: 4px;
+    letter-spacing: -0.01em;
+  }
+  .rule { width: 48px; height: 4px; background: var(--accent); border: 0; margin: 16px 0 20px; border-radius: 2px; }
   .updated { color: var(--muted); font-size: 0.9rem; margin-bottom: 32px; }
   p { margin: 0 0 20px; }
-  a { color: var(--accent); }
+  a { color: var(--accent); text-decoration-thickness: 1.5px; }
 </style>
 </head>
 <body>
 <main>
   <h1>Fitter Privacy Policy</h1>
+  <hr class="rule">
   <p class="updated">Last updated: 24 September 2026</p>
 
   <p>Fitter collects your email (for sign-in), your training data and coach conversation, and, if
